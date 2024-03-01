@@ -1,0 +1,43 @@
+css
+
+
+@import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
+
+svg {
+	font-family: "Sanchez", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 2s infinite alternate;
+	stroke-width: 2;
+	stroke: #686868;
+	font-size: 68px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(91,91,91,0); stroke: rgba(104,104,104,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(91,91,91,0); stroke: rgba(104,104,104,1); }
+	80%  {fill: rgba(91,91,91,0); stroke: rgba(104,104,104,1); stroke-width: 3; }
+	100% {
+		fill: rgba(91,91,91,1); stroke: rgba(104,104,104,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #FFFFFF};
+
+
+
+
+
+html
+
+<div class="wrapper">
+	<svg>
+		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+			Alpha
+		</text>
+	</svg>
+</div>
